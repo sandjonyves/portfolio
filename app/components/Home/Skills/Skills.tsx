@@ -5,7 +5,7 @@ import SkillCard from './SkillCard'
 
 export default function Skills() {
   return (
-    <div className='pt-16 pb-16 bg-[#0f0715]'>
+    <div className='pt-16 pb-16 bg-neutral-900'>
         <SectionHeading>
             My Skills
         </SectionHeading>

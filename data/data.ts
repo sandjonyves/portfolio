@@ -1,15 +1,17 @@
+
+
 export const BaseInfo = {
-  name: "Sajal",
+  name: "Sandjon Yves",
   position: "Full Stack Web Developer",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
   profilePic: "/images/hero.png",
+  words:" Sajal "
 };
 
 export const aboutInfo = {
   title: "Crafting Web Application with Passion and Precision",
-  description:
-    "At webdev warriors, we’re a dedicated team of designers and developers committed to delivering tailored web solutions. With a blend of creativity and technical expertise, we help businesses elevate their online presence and achieve their goals",
+  description:"My name is Sandjon Yves. I am a passionate fullstack web and mobile developer, as well as a software engineer in my daily life. I learn quickly and have a strong self-learning ability. I love exploring new technologies and am passionate about problem-solving. I enjoy nearly all stacks of application development. I am also very competitive in projects, with my main goal being to work on a large number of useful applications. My core skill is based on JavaScript, but my favorite language is Python. I am open to any job opportunity that matches my skills and interests",
   client: "50+",
   experience: "3+",
   project: "200+",
@@ -44,31 +46,31 @@ export const servicesData = [
       "Engaging, responsive front-end designs for better user experiences.",
     icon: "/images/s4.png",
   },
-  {
-    id: 5,
-    title: "Database Solutions",
-    description:
-      "Efficient and scalable database management for your data needs.",
-    icon: "/images/s5.png",
-  },
-  {
-    id: 6,
-    title: "Real-Time Features",
-    description: "Add live chat, notifications, and real-time data updates.",
-    icon: "/images/s6.png",
-  },
-  {
-    id: 7,
-    title: "Speed Optimization",
-    description: "Boost performance with faster load times and optimization.",
-    icon: "/images/s7.png",
-  },
-  {
-    id: 8,
-    title: "Website Management",
-    description: "Easy content management systems with flexible controls.",
-    icon: "/images/s8.png",
-  },
+  // {
+  //   id: 5,
+  //   title: "Database Solutions",
+  //   description:
+  //     "Efficient and scalable database management for your data needs.",
+  //   icon: "/images/s5.png",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Real-Time Features",
+  //   description: "Add live chat, notifications, and real-time data updates.",
+  //   icon: "/images/s6.png",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Speed Optimization",
+  //   description: "Boost performance with faster load times and optimization.",
+  //   icon: "/images/s7.png",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Website Management",
+  //   description: "Easy content management systems with flexible controls.",
+  //   icon: "/images/s8.png",
+  // },
 ];
 
 export const projectData = [
@@ -76,41 +78,49 @@ export const projectData = [
     id: 1,
     image: "/images/p1.png",
     url: "https://agency-opal-eight.vercel.app/",
+    name:"Project" 
   },
   {
     id: 2,
     image: "/images/p2.png",
     url: "https://burger-pearl.vercel.app/",
+    name:"Project"
   },
   {
     id: 3,
     image: "/images/p3.png",
     url: "https://game-ecommerce-yt.vercel.app/",
+    name:"Project"
   },
   {
     id: 4,
     image: "/images/p4.png",
     url: "https://elearning-yt.vercel.app/",
+    name:"Project"
   },
   {
     id: 5,
     image: "/images/p5.png",
     url: "https://invest-peach.vercel.app/",
+    name:"Project"
   },
   {
     id: 6,
     image: "/images/p6.png",
     url: "https://job-chi-ruby.vercel.app/",
+    name:"Project"
   },
   {
     id: 7,
     image: "/images/p7.png",
     url: "https://wdw-ecom.vercel.app/",
+    name:"Project"
   },
   {
     id: 8,
     image: "/images/p8.png",
     url: "https://webhost-ten.vercel.app/",
+    name:"Project"
   },
 ];
 

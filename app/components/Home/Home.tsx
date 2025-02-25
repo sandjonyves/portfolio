@@ -5,15 +5,21 @@ import Services from './services/Services'
 import Project from './project/Project'
 import Skills from './Skills/Skills'
 import Review from './Review/Review'
+import Experience from './Experience/Experience'
+import Study from './Study/Study'
+
 
 export default function Home() {
   return (
     <div className='overflow-hidden'>
         <Hero/>
         <About/>
-        <Services/>
-        <Project/>
+        <Experience/>
+        {/* <Services/> */}
         <Skills/>
+        <Study/>
+        <Project/>
+       
         <Review/>
     </div>
   )

@@ -3,23 +3,26 @@ import SectionHeading from '../../Helper/SectionHeading'
 import { aboutInfo } from '@/data/data'
 import { FaCheck } from 'react-icons/fa6'
 import Image from 'next/image'
-
+// import { Boxes } from '@/components/ui/background-boxes'
+import Animetd from '@/public/images/animate.gif'
 export default function About() {
   return (
-    <div className='pt-16 pb-16 bg-[#050709]'>
-        {/*sectionHeading */}
-      
-        <SectionHeading> About Me </SectionHeading>
-        <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20'>
+    <div  className='w-full  pt-20 bg-neutral-900 overflow-hidden relative pb-32'>
+            {/* <Boxes /> */}
+        
+        <SectionHeading> About  <span className="mx-2"> </span> Me </SectionHeading>
+        <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-10'>
             {/*Text Cintent */}
+           
             <div>
-                <h1 className='text-bg text=[26px] sm:3xl md:text-4xl lg:text-5xl font-bold text-gray-200'> 
+            {/* <Boxes/> */}
+                <h1 className='text-bg text=[26px] sm:3xl md:text-4xl lg:text-4xl font-bold text-gray-200'> 
                     {aboutInfo.title}
                 </h1>
                 <p className='mt-6 text-gray-500'>
                     {aboutInfo.description}
                 </p>
-                <div className='mt-8'>
+                {/* <div className='mt-8'>
                     <div className='flex flex-center space-x-2 mb-6'>
                         <div className="w-7 h-7 bg-blue-700 flex flex-col justify-center items-center rounded-lg">
                             <FaCheck className='text-white'/>
@@ -28,8 +31,8 @@ export default function About() {
                             Frontend Development
                         </p>
                     </div>
-                </div>
-                <div className='mt-8'>
+                </div> */}
+                {/* <div className='mt-8'>
                     <div className='flex flex-center space-x-2 mb-6'>
                         <div className="w-7 h-7 bg-orange-500 flex flex-col justify-center items-center rounded-lg">
                             <FaCheck className='text-white'/>
@@ -38,8 +41,8 @@ export default function About() {
                             Backend Development
                         </p>
                     </div>
-                </div>
-                <div className='mt-8'>
+                </div> */}
+                {/* <div className='mt-8'>
                     <div className='flex flex-center space-x-2 mb-6'>
                         <div className="w-7 h-7 bg-green-700 flex flex-col justify-center items-center rounded-lg">
                             <FaCheck className='text-white'/>
@@ -48,16 +51,18 @@ export default function About() {
                             Full Start Development
                         </p>
                     </div>
-                </div>
+                </div> */}
             </div>
             {/*Stack Content */}
-                <div className="grid grid-cols-2  gap-16 items-center lg:mx-auto ">
+                <div className="grid grid-cols-1   items-center lg:mx-auto ">
                     <div className='flex flex-col '>
-                        <Image src={"/images/customer.png"} 
+                        {/* <Image src={"/images/animate.gif"} 
                         alt=''
-                        width={80}
+                        width={350}
                         height={80}
-                        />
+                        className='bg-red-500 border border-blue-500'
+                        style={{backgroundColor:"black"}}
+                        /> */}
                         <h1 className=' mt-2 font-bold text-xl text-white text-center'>
                             {aboutInfo.client}
                         </h1>
@@ -66,7 +71,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className='flex flex-col '>
+                    {/* <div className='flex flex-col '>
                         <Image src={"/images/experience.png"} 
                         alt=''
                         width={80}
@@ -102,7 +107,7 @@ export default function About() {
                         />
                         <h1 className=' mt-2 font-bold text-xl text-white text-center'></h1>
                         <p className='text-base sm:text-lg text-gray-400 text-center'></p>
-                    </div>
+                    </div> */}
             </div>
         </div>
     </div>
