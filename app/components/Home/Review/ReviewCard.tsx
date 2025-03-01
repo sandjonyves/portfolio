@@ -1,4 +1,4 @@
-import { clientReviews } from '@/data/data'
+// import { clientReviews } from '@/data/data'
 import Image from 'next/image'
 import React from 'react'
 import { FaStar } from 'react-icons/fa6'

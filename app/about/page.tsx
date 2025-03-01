@@ -1,8 +1,8 @@
 import React from 'react';
 import AboutMe from './AboutMe';
-import { BackgroundLines } from '@/components/ui/background-lines';
-import Gallery from '@/components/3DGallery/3Dgallery';
-import { BoxesCore } from '@/components/ui/background-boxes';
+// import { BackgroundLines } from '@/components/ui/background-lines';
+// import Gallery from '@/components/3DGallery/3Dgallery';
+// import { BoxesCore } from '@/components/ui/background-boxes';
 
 export default function AboutPage() {
   return (

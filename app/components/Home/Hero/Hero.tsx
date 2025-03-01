@@ -1,12 +1,12 @@
-import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+// import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import { BaseInfo } from '@/data/data'
 import Image from 'next/image'
 import React from 'react'
-import { FaDownload } from 'react-icons/fa6'
-import { Boxes, BoxesCore } from '@/components/ui/background-boxes'
+// import { FaDownload } from 'react-icons/fa6'
+import { Boxes} from '@/components/ui/background-boxes'
 import { TypewriterEffect } from '@/components/ui/typewriter-effect'
 import { Button } from '@mui/material'
-import { ContactMail, ContactMailOutlined, WorkHistoryRounded } from '@mui/icons-material'
+import { ContactMailOutlined, WorkHistoryRounded } from '@mui/icons-material'
 export default function Hero() {
   return (
     <div

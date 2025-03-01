@@ -1,10 +1,10 @@
 import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
 import { servicesData } from '@/data/data'
-import { div } from 'motion/react-client'
+// import { div } from 'motion/react-client'
 import ServiceCard from './ServiceCard'
 import Image from 'next/image'
-import animate from '@/public/images/animate.gif'
+// import animate from '@/public/images/animate.gif'
 export default function Services() {
   return (
     <div className='pt-16 pb-6 bg-[#3A77FF]'>

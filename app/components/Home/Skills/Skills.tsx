@@ -1,6 +1,6 @@
 import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
-import { skillsData } from '@/data/data'
+// import { skillsData } from '@/data/data'
 import SkillCard from './SkillCard'
 import Marquee from "react-fast-marquee";
 import { skills } from '@/utils/utilities';
