@@ -47,9 +47,9 @@ export default function GlitterCards({ children }: Props) {
     };
   }, []);
 
-  function fromCenter({ x, y }: { x: number; y: number }): number {
-    return Math.min(Math.max(0, Math.sqrt((y - 0.5) ** 2 + (x - 0.5) ** 2) / 0.5), 1);
-  }
+  // function fromCenter({ x, y }: { x: number; y: number }): number {
+  //   return Math.min(Math.max(0, Math.sqrt((y - 0.5) ** 2 + (x - 0.5) ** 2) / 0.5), 1);
+  // }
 
   return (
     <div ref={cardsRef} id="cards" className="">

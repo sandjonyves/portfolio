@@ -15,8 +15,10 @@ export const TextGenerateEffect = ({
   duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
+
   useEffect(() => {
+    if (!scope.current) return;
     animate(
       "span",
       {
@@ -24,38 +26,28 @@ export const TextGenerateEffect = ({
         filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: duration ? duration : 1,
+        duration: duration,
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate, duration, filter]);
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
+  return (
+    <div className={cn("font-bold", className)}>
+      <div className="dark:text-white text-black text-2xl leading-snug tracking-wide">
+        <motion.div ref={scope}>
+          {wordsArray.map((word, idx) => (
             <motion.span
-              key={word + idx}
-              className="gap-12 text-2xl md:text-4xl  text-gray-300 font-semibold"
+              key={`${word}-${idx}`}
+              className="gap-12 text-2xl md:text-4xl text-gray-300 font-semibold"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
             >
               {word}{" "}
             </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
-
-  return (
-    <div className={cn("font-bold", className)}>
-      <div className="">
-        <div className=" dark:text-white text-black text-2xl leading-snug tracking-wide">
-          {renderWords()}
-        </div>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
