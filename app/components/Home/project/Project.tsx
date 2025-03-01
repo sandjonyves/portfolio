@@ -1,9 +1,9 @@
 import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
 import { projectData } from '@/data/data'
-import Image from 'next/image'
-import Link from 'next/link'
-import CodeBlockProject from './CodeBlockProject'
+// import Image from 'next/image'
+// import Link from 'next/link'
+// import CodeBlockProject from './CodeBlockProject'
 import GlitterCards from '@/components/GliterCard/GlifterCard'
 import CardProject from './CardProject'
 

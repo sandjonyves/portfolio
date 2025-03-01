@@ -1,10 +1,10 @@
 import React from 'react'
-import SectionHeading from '../../Helper/SectionHeading'
+// import SectionHeading from '../../Helper/SectionHeading'
 import { aboutInfo } from '@/data/data'
-import { FaCheck } from 'react-icons/fa6'
-import Image from 'next/image'
+// import { FaCheck } from 'react-icons/fa6'
+// import Image from 'next/image'
 // import { Boxes } from '@/components/ui/background-boxes'
-import Animetd from '@/public/images/animate.gif'
+// import Animetd from '@/public/images/animate.gif'
 export default function About() {
   return (
     <div  className='w-full  pt-20 bg-neutral-900 overflow-hidden relative pb-32'>

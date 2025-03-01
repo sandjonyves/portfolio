@@ -1,17 +1,17 @@
 import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
-import { servicesData } from '@/data/data'
-import { div } from 'motion/react-client'
+// import { servicesData } from '@/data/data'
+// import { div } from 'motion/react-client'
 
-import Image from 'next/image'
-import animate from '@/public/images/animate.gif'
+// import Image from 'next/image'
+// import animate from '@/public/images/animate.gif'
 import { CardShineEffectCSS } from '@/components/CardShineEffect'
 
 import experience from '@/public/assets/Lotties/dev.json'
 import AnimationLottie from "@/components/ui/animation-lottie";
-import { SiJavascript } from 'react-icons/si'
+// import { SiJavascript } from 'react-icons/si'
 import { FaAndroid, FaPython } from 'react-icons/fa6'
-import { Engineering, Javascript } from '@mui/icons-material'
+// import { Engineering, Javascript } from '@mui/icons-material'
 import { RiJavascriptLine } from 'react-icons/ri'
 import { MdEngineering } from "react-icons/md";
 
