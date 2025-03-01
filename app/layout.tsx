@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Sora } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "@/components/Navbar/ResponsiveNav";
+import Footer from "@/components/Footer/Footer";
+import { ScrollLinked } from "@/components/Scroll/ScrollLinked";
+
 
 
 
@@ -24,6 +28,10 @@ export const metadata: Metadata = {
   description: "sandjon yves portfolio",
 };
 
+
+
+
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,8 +42,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        
+        <ScrollLinked/>
+
+        <ResponsiveNav/>
+      
         {children}
+        {/* <Footer/>  */}
+        <Footer/> 
       </body>
+      
     </html>
   );
 }

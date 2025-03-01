@@ -1,8 +1,10 @@
+import { SiMui, SiNextdotjs, SiFastapi, SiJavascript, SiKotlin, SiMongodb, SiMysql, SiPostgresql, SiRedux, SiSwagger, SiTailwindcss } from "react-icons/si";
 
 
 export const BaseInfo = {
-  name: "Sandjon Yves",
-  position: "Full Stack Web Developer",
+  firstName: "Sandjon",
+  lastName:"Yves",
+  position: "I am a Fullstack software developer and a software engineer",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
   profilePic: "/images/hero.png",

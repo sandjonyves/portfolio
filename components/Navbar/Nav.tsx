@@ -28,7 +28,7 @@ export default function  Nav({openNav}:props) {
     }
   },[])
   return (
-    <div className={`fixed ${navBg? 'bg-[#240b39]':'fixed'} transition-all duration-200  h-[12vh] z-[10] w-full`}> 
+    <div className={`fixed ${navBg? 'bg-[#0e1217]':'fixed'} transition-all duration-200  h-[12vh] z-[10] w-full`}> 
         <div className='flex items-center h-full justify-between w-[90%] sm :w-[90%] xl:w-[80%] mx-auto'>
             {/* LOGO */}
             <Image 

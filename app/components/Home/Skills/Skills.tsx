@@ -2,6 +2,9 @@ import React from 'react'
 import SectionHeading from '../../Helper/SectionHeading'
 import { skillsData } from '@/data/data'
 import SkillCard from './SkillCard'
+import Marquee from "react-fast-marquee";
+import { skills } from '@/utils/utilities';
+
 
 export default function Skills() {
   return (
@@ -9,19 +12,50 @@ export default function Skills() {
         <SectionHeading>
             My Skills
         </SectionHeading>
-        <div className='mt-20 w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 items-center'>
+       
+        <div className='mt-20 w-full  gap-4 items-center'>
+        <Marquee
+                    gradient={false}
+                    speed={80}
+                    // pauseOnHover={true}
+                    // pauseOnClick={true}
+                    delay={0}
+                    play={true}
+                    direction="left"
+                >
             {
-                skillsData.map((skill)=>{
+                skills.slice(0,9).map((skill)=>{
                     return(
-                        <div key={skill.id}>
+                        <div className='w-full space-x-3' key={skill.id}>
                             <SkillCard skill={skill}/>
                         </div>
                         )
                     }
                 )
             }
-
+           </Marquee>
+           <Marquee
+                    gradient={false}
+                    speed={80}
+                    // pauseOnHover={true}
+                    // pauseOnClick={true}
+                    delay={0}
+                    play={true}
+                    direction="right"
+                >
+            {
+                skills.slice(11,21).map((skill)=>{
+                    return(
+                        <div className='w-full space-x-3' key={skill.id}>
+                            <SkillCard skill={skill}/>
+                        </div>
+                        )
+                    }
+                )
+            }
+           </Marquee>
         </div>
+
     </div>
   )
 }

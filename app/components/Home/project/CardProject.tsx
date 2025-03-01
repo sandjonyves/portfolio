@@ -13,7 +13,7 @@ export default function CardProject({image,title,description,href}:props) {
 
 <div className="">
  
-        <Image className="rounded-t-lg" src={image} alt="project" className='w-full h-64 ' width={200} height={100} />
+        <Image className="rounded-t-lg" src={image} alt="project" className='w-[80%] h-64 ml-10 ' width={200} height={100} />
   
     <div className="pt-2">
         <a href="#">

@@ -7,6 +7,8 @@ import Skills from './Skills/Skills'
 import Review from './Review/Review'
 import Experience from './Experience/Experience'
 import Study from './Study/Study'
+import Footer from '../../../components/Footer/Footer'
+import Contact from './Contact/Contact'
 
 
 export default function Home() {
@@ -20,7 +22,9 @@ export default function Home() {
         <Study/>
         <Project/>
        
-        <Review/>
+        {/* <Review/> */}
+        <Contact/>
+       
     </div>
   )
 }

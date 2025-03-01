@@ -53,7 +53,7 @@ export default function GlitterCards({children}:props) {
   return (
     <div ref={cardsRef} id="cards" className="">
      
-        <div  className="card flex flex-col justify-center p-4 bg-gray-200 rounded-lg shadow-lg relative hover:scale-105 transition-all">
+        <div  className="card flex flex-col justify-center p-4  rounded-lg shadow-lg relative hover:scale-105 transition-all">
           <div className="card-content flex flex-col justify-center">
             {children}
           </div>

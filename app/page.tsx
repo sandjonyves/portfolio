@@ -1,10 +1,11 @@
 "use client"
 import React from 'react'
 import Home from './components/Home/Home'
-import ResponsiveNav from './components/Home/Navbar/ResponsiveNav'
+import ResponsiveNav from '../components/Navbar/ResponsiveNav'
 
 
 import { motion, useScroll } from "motion/react"
+import Footer from '../components/Footer/Footer'
 
  function ScrollLinked() {
     const { scrollYProgress } = useScroll()
@@ -21,11 +22,11 @@ import { motion, useScroll } from "motion/react"
                     right: 0,
                     height: 10,
                     originX: 0,
-                    backgroundColor: "#ff0088",
+                    backgroundColor: "#3b82f6",
                     zIndex:1000,
                 }}
             />
-            <Content />
+            <Home/>
         </>
     )
 }
@@ -34,40 +35,15 @@ import { motion, useScroll } from "motion/react"
  * ==============   Utils   ================
  */
 
-function Content() {
-  const { scrollYProgress } = useScroll()
-    return (
-        <>
-         <motion.div
-                id="scroll-indicator"
-                style={{
-                    scaleX: scrollYProgress,
-                    position: "fixed",
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    height: 10,
-                    originX: 0,
-                    backgroundColor: "#ff0088",
-                    zIndex:1000,
-                }}
-            />
-            <ResponsiveNav/>
-            <Home/>
-               
-               
-          
-        </>
-    )
-}
+
 
 export default function HomePage() {
   return (
     <div className=''>
       <div>
-      <ScrollLinked/>
+      {/* <ScrollLinked/> */}
         {/* <ResponsiveNav/> */}
-        {/* <Home/> */}
+        <Home/>
         
       </div>
     </div>

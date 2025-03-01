@@ -10,16 +10,19 @@ export default function About() {
     <div  className='w-full  pt-20 bg-neutral-900 overflow-hidden relative pb-32'>
             {/* <Boxes /> */}
         
-        <SectionHeading> About  <span className="mx-2"> </span> Me </SectionHeading>
+        {/* <SectionHeading> About  <span className="mx-2"> </span> Me </SectionHeading> */}
+        <h1 className='font-extrabold text-5xl text-center text-white tracking-widest'>
+            About Me
+        </h1>
         <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-10'>
             {/*Text Cintent */}
            
             <div>
             {/* <Boxes/> */}
-                <h1 className='text-bg text=[26px] sm:3xl md:text-4xl lg:text-4xl font-bold text-gray-200'> 
+                {/* <h1 className='text-bg text=[26px] sm:3xl md:text-4xl lg:text-4xl font-bold text-gray-200'> 
                     {aboutInfo.title}
-                </h1>
-                <p className='mt-6 text-gray-500'>
+                </h1> */}
+                <p className='mt-6 text-gray-200'>
                     {aboutInfo.description}
                 </p>
                 {/* <div className='mt-8'>
