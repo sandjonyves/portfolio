@@ -28,7 +28,7 @@ export default function GlitterCards({ children }: Props) {
 
         const BOX = card.getBoundingClientRect();
         const RATIO = { x: x / BOX.width, y: y / BOX.height };
-        const CENTER = fromCenter(RATIO);
+        // const CENTER = fromCenter(RATIO);
 
         card.style.setProperty('--ratio-x', RATIO.x.toString());
         card.style.setProperty('--ratio-y', RATIO.y.toString());

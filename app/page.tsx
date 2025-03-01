@@ -4,7 +4,7 @@ import Home from './components/Home/Home'
 // import ResponsiveNav from '../components/Navbar/ResponsiveNav'
 
 
-import { motion, useScroll } from "motion/react"
+// import { motion, useScroll } from "motion/react"
 // import Footer from '../components/Footer/Footer'
 
 /**

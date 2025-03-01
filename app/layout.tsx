@@ -18,12 +18,13 @@ const geistMono = Geist_Mono({
 
 const soraFont = Sora({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-  subsets: ["latin"]
+  subsets: ["latin"],
+  variable: "--font-sora",
 });
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "sandjon yves portfolio",
+  description: "Sandjon Yves portfolio",
 };
 
 export default function RootLayout({
@@ -33,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased`} // Ajout de la police Sora
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} ${soraFont.variable} antialiased`}>
         <ScrollLinked />
         <ResponsiveNav />
         {children}
