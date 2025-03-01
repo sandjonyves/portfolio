@@ -66,7 +66,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
   center = ["x", "y"],
 }) => {
   const uniforms = React.useMemo(() => {
-    let colorsArray = [
+  let colorsArray = [
       colors[0],
       colors[0],
       colors[0],

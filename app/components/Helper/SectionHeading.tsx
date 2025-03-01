@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 type props ={
     children : ReactNode
 }
-console.log()
+
 
 
 export default function SectionHeading({children}:props) {
@@ -14,9 +14,9 @@ export default function SectionHeading({children}:props) {
       <span className='text-yellow-500'>.</span>
       <span className='text-5xl '>log</span>
       <span className='text-5xl text-blue-500'>(</span>
-      <span className='relative bottom-3'>"</span>
+      <span className='relative bottom-3'> </span>
       <span className='text-4xl title-bg font-extrabold'> {children} </span>
-      <span className='relative bottom-3'>"</span>
+      <span className='relative bottom-3'> </span>
       <span className='text-5xl text-blue-500'>)</span>
       </h1>
        

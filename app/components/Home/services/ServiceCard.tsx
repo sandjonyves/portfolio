@@ -5,9 +5,9 @@ import Tilt from 'react-parallax-tilt'
 type props ={
     service:{
         id:number;
-        title:String;
-        description:String;
-        icon:String;
+        title:string;
+        description:string;
+        icon:string;
     }
 }
 

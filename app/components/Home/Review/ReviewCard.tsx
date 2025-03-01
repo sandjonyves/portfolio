@@ -6,10 +6,10 @@ import { FaStar } from 'react-icons/fa6'
 type props = {
     review :{
         name:string,
-        review : String,
+        review : string,
         rating :number,
-        profession : String,
-        image : String
+        profession : string,
+        image : string
     }
 }
 export default function ReviewCard({review}:props) {

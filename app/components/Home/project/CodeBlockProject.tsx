@@ -2,23 +2,30 @@ import React, { useEffect } from 'react';
 
 const CodeBlockProject: React.FC = () => {
   useEffect(() => {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css';
-    document.head.appendChild(link);
+    // Vérifie si les fichiers sont déjà chargés pour éviter les doublons
+    if (!document.querySelector('link[href*="prism-okaidia"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css';
+      document.head.appendChild(link);
+    }
 
-    const script = document.createElement('script');
-    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js';
-    document.body.appendChild(script);
+    if (!document.querySelector('script[src*="prism.min.js"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
 
     return () => {
-      document.head.removeChild(link);
-      document.body.removeChild(script);
+      // Ne pas supprimer les fichiers pour éviter les erreurs si réutilisé ailleurs
     };
   }, []);
 
   const copyToClipboard = () => {
-    const codeElement = document.querySelector('.language-javascript code') as HTMLElement;
+    const codeElement = document.querySelector('.language-javascript code') as HTMLElement | null;
+    if (!codeElement) return;
+
     const textArea = document.createElement('textarea');
     textArea.value = codeElement.textContent || '';
     document.body.appendChild(textArea);
@@ -34,8 +41,7 @@ const CodeBlockProject: React.FC = () => {
         <div className="flex items-center justify-between">
           <span className="text-gray-200 text-xl font-bold">Code Snippet</span>
           <button
-            id="copyButton"
-            className="px-4 py-2 text-white bg-teal-500 rounded hover:bg-teal-600 focus:outline-none focus:ring focus:ring-red-400"
+            className="px-4 py-2 text-white bg-teal-500 rounded hover:bg-teal-600 focus:outline-none focus:ring focus:ring-teal-400"
             onClick={copyToClipboard}
           >
             Copy
@@ -45,11 +51,15 @@ const CodeBlockProject: React.FC = () => {
 
       <div className="px-3 py-2">
         <pre className="language-javascript">
-          <code className="text-sm">// Your JavaScript code goes here
-            const projects ={
-                
-            }
-</code>
+          <code className="text-sm">
+            {`// Exemple de gestion de projets
+const projects = [
+  { id: 1, name: "Projet 1" },
+  { id: 2, name: "Projet 2" }
+];
+
+console.log(projects);`}
+          </code>
         </pre>
       </div>
     </div>

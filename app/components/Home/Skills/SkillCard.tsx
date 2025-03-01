@@ -2,7 +2,7 @@
 import React from 'react'
 type props ={
    skill:{
-    id: Number;
+    id: number;
    tag: string;
     icon:  React.JSX.Element;
     // percent: string;

@@ -13,6 +13,7 @@ import EN from '@/public/assets/languages/EN.svg';
 
 // STYLE
 import './language.css';
+import Image from 'next/image';
 
 interface LanguageProps {
   style?: React.CSSProperties;
@@ -44,7 +45,7 @@ const Language: React.FC<LanguageProps> = ({ style, text = true, page = 'default
           onClick={() => onOptionChangeHandler(lang)}
           style={{ border: language === lang ? '1px solid #990000' : 'none', display: 'flex', alignItems: 'center' }}
         >
-          <img src={lang === 'fr' ? FR : EN} alt={lang === 'fr' ? 'French' : 'English'} loading="lazy" />
+          <Image src={lang === 'fr' ? FR : EN} alt={lang === 'fr' ? 'French' : 'English'} loading="lazy" />
           {page !== 'default' || text ? (
             <Typography text={lang === 'fr' ? <>Fran&ccedil;ais</> : <>English</>} className="ms-3" />
           ) : null}

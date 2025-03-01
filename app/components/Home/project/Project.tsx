@@ -7,7 +7,6 @@ import { projectData } from '@/data/data'
 import GlitterCards from '@/components/GliterCard/GlifterCard'
 import CardProject from './CardProject'
 
-
 export default function Project() {
   return (
     <div className='pt-6 pb-16 bg-[#050709]'>
@@ -18,14 +17,12 @@ export default function Project() {
        
         <div className='w-80% mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-12 items-center'>
             {
-                projectData.map((project)=>{
+                projectData.map((project) => {
                     return (
-                        <GlitterCards>
-                            
-                            <div key={project.id} className='  rounded-lg ' >
-                            <CardProject  image={project.image} title={project.name} />
-                                    {/* <Image src={project.image} alt={"project"} className='w-full' width={300} height={200}/> */}
-
+                        <GlitterCards key={project.id}> {/* Ajout de la clé ici */}
+                            <div className='rounded-lg'>
+                                <CardProject  image={project.image} title={project.name} />
+                                {/* <Image src={project.image} alt={"project"} className='w-full' width={300} height={200}/> */}
                             </div>
                         </GlitterCards>
                     )
